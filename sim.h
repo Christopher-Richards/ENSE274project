@@ -11,7 +11,9 @@ struct simulator
 	std::vector<bus> busses;
 	void tick(unsigned);//processes 1 "clock" of the system
 	void start();//starts the system
+	simulator(){x_i=0;}
 private:
+	short x_i;
 	short xadd(unsigned);
 	short xrem(unsigned);
 };

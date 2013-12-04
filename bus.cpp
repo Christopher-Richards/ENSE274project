@@ -73,7 +73,7 @@ void bus::incStop(){stop=(stop+1)%10;}
 
 short depot::check(bus a)
 {
-	return (a.getPass()-a.getMaxPass())+fullBus;
+	return a.getPass();
 	//if fullBus is returned, send another bus
 	//if 0 is returned, recall this bus
 	//otherwise good
